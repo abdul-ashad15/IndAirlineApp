@@ -1,13 +1,13 @@
 import { Component, OnInit, ɵConsole } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormArray } from '@angular/forms'
-import { promise } from 'protractor';
+//import { promise } from 'protractor';
 import { Observable } from 'rxjs';
-import { DataTransferCheckinService } from '../Services/data-transfer-checkin.service';
+import { DataTransferCheckinService } from '../services/data-transfer-checkin.service';
 import { Router } from '@angular/router';
-import { format } from 'path';
-import { FlightOpeationService } from '../Services/flight-opeation.service';
-import { SeatOperationService } from '../Services/seat-operation.service';
-import { TravellersOperationService } from '../Services/travellers-operation.service';
+//import { format } from 'path';
+import { FlightOpeationService } from '../services/flight-opeation.service';
+import { SeatOperationService } from '../services/seat-operation.service';
+import { TravellersOperationService } from '../services/travellers-operation.service';
 
 
 @Component({

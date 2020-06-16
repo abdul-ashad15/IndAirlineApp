@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FlightOpeationService } from '../Services/flight-opeation.service';
-import { FlightList, AirportLocation, Airways } from '../Models/flight-model/flight-model.component';
+import { FlightOpeationService } from '../services/flight-opeation.service';
+import { FlightList, AirportLocation, Airways } from '../Models/flight-model.component';
 import { map, catchError } from 'rxjs/operators';
-import { DataTransferCheckinService } from '../Services/data-transfer-checkin.service';
+import { DataTransferCheckinService } from '../services/data-transfer-checkin.service';
 import {Router} from '@angular/router';
 import { DatePipe } from '@angular/common';
 

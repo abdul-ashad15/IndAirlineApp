@@ -1,10 +1,10 @@
 import { Component, OnInit, OnChanges, AfterContentInit, AfterViewChecked, AfterContentChecked, AfterViewInit, Input } from '@angular/core';
 import { FlightList, IOriginDestination, OriginDestination, SeatAllocation } from '../Models/flight-model.component';
-import { FlightOpeationService } from '../Services/flight-opeation.service';
-import { DataTransferCheckinService } from '../Services/data-transfer-checkin.service';
+import { FlightOpeationService } from '../services/flight-opeation.service';
+import { DataTransferCheckinService } from '../services/data-transfer-checkin.service';
 import { Router } from '@angular/router';
 import { ReturnStatement } from '@angular/compiler';
-import { TravellersOperationService } from '../Services/travellers-operation.service';
+import { TravellersOperationService } from '../services/travellers-operation.service';
 
 @Component({
   selector: 'app-flight-detail',

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TravellersOperationService } from '../Services/travellers-operation.service';
+import { TravellersOperationService } from '../services/travellers-operation.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { DataTransferCheckinService } from '../Services/data-transfer-checkin.service';
+import { DataTransferCheckinService } from '../services/data-transfer-checkin.service';
 import { Router } from '@angular/router';
-import { FlightList } from '../Models/flight-model/flight-model.component';
-import { FlightOpeationService } from '../Services/flight-opeation.service';
+import { FlightList } from '../Models/flight-model.component';
+import { FlightOpeationService } from '../services/flight-opeation.service';
 
 @Component({
   selector: 'app-flight-ticket',
