@@ -10,57 +10,33 @@ import { Ancillaryservices } from './ancillary-services/ancillaryservices.compon
 import { SignupComponent } from './login/signup.components';
 import { InFlightCreate } from './Inflight/inflightcreate.component';
 import { EditUsers } from './login/edit-profile.component';
+import { ReactiveFormsModule} from '@angular/forms';
+import { CheckinComponent } from './checkin/checkin.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FlightListComponent } from './flight-list/flight-list.component';
+import { FlightDetailComponent } from './flight-detail/flight-detail.component';
+import { TravellerListComponent } from './traveller-list/traveller-list.component';
+import { FlightTicketComponent } from './flight-ticket/flight-ticket.component';
+import { DashboardPassengerComponent } from './dashboard-passenger/dashboard-passenger.component';
 
 export const routes: Routes = [
-  {    
-    path: '',    
-    //redirectTo: 'login',
-    component: LoginComponent,
-    canActivate: [AuthGuard],
-    pathMatch: 'full',
-   /* path: '',
-    component: HomeComponent,   */ 
-  },    
-  {    
-    path:'admin',
-    component: AdminComponent,
-    canActivate: [AuthGuard],
-    /*path: 'admin',
-    component: AdminComponent,
-    data: { roles: [Role.Admin] }*/
-  },
-  {
-    path:'home',
-    component: HomeComponent
-  },
-  {
-    path:'ancilary',
-    component: Ancillaryservices
-  },
-  {
-    path:'signup',
-    component: SignupComponent
-  },
-  {
-    path:'login',
-    component: LoginComponent
-  },
-  {
-    path:'inflight',
-    component: InFlightCreate
-  },
-  {
-    path:'editprofile',
-    component: EditUsers
-  }
-  
-  /*{
-    path: 'login',
-    component: LoginComponent
-},
-
-// otherwise redirect to home
-{ path: '**', redirectTo: '' }*/
+  { path: '',component: LoginComponent,canActivate: [AuthGuard],pathMatch: 'full'},
+  { path: '',   redirectTo: '/first-component', pathMatch: 'full' },
+  {path:'checkin',component:CheckinComponent},
+  {path:'FlightList',component:FlightListComponent},
+  {path:'FlightDetail',component:FlightDetailComponent},
+  {path:'TravellerList',component:TravellerListComponent},
+  {path:'FlightTicket',component:FlightTicketComponent},
+  {path:'DashboardPassenger',component:DashboardPassengerComponent},
+  {path:'PageNotFound',component:PageNotFoundComponent},
+  {path:'**',component:PageNotFoundComponent}   
+  { path:'admin',component: AdminComponent,canActivate: [AuthGuard],},
+  {path:'home', component: HomeComponent},
+  {path:'ancilary',component: Ancillaryservices},
+  {path:'signup',component: SignupComponent},
+  {path:'login',component: LoginComponent},
+  {path:'inflight',component: InFlightCreate},
+  {path:'editprofile',component: EditUsers}
 ];
 
 export const loginroutes: Routes = [

@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -34,12 +35,29 @@ import { InFlightList } from './Inflight/inflightlist.component';
 import { InFlightService } from './Inflight/inflight.service';
 import { EditUsers } from './login/edit-profile.component';
 import { MatSelectModule } from '@angular/material/select';
+import { CheckinComponent } from './checkin/checkin.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FlightListComponent } from './flight-list/flight-list.component';
+import { FlightDetailComponent } from './flight-detail/flight-detail.component';
+import { SafeHtmlPipe } from './safe-html.pipe';
+import { TravellerListComponent } from './traveller-list/traveller-list.component';
+import { FlightTicketComponent } from './flight-ticket/flight-ticket.component';
+import { DashboardPassengerComponent } from './dashboard-passenger/dashboard-passenger.component';
+import { TravellersFilterPipe } from './travellers-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,Passangerdetails,PassangerCreate, AdminComponent, LoginComponent,routingComponents,
     navComponent,navAdminComponent,HomeComponent, Ancillaryservices,Ancillarlistservices,FilterPipe,
-        SignupComponent,InFlightCreate,InFlightList,EditUsers
+    SignupComponent,InFlightCreate,InFlightList,EditUsers,CheckinComponent,
+    PageNotFoundComponent,
+    FlightListComponent,
+    FlightDetailComponent,
+    SafeHtmlPipe,
+    TravellerListComponent,
+    FlightTicketComponent,
+    DashboardPassengerComponent,
+    TravellersFilterPipe
   ],
   imports: [
     BrowserModule,
