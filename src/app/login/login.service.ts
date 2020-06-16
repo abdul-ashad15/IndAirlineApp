@@ -43,9 +43,9 @@ export class LoginService
         return this.http.get<User>(this.url + '/' + id);
     }
 
-    editusers() : Observable<User[]>{
-      return this.http.get
-
+    editusers(user : User) : Observable<User>
+    {
+        return this.http.put<User>(this.url + '/' + user.id,user);
     }
 
     logout() {
