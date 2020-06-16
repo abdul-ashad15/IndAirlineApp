@@ -13,16 +13,14 @@ export class HomeComponent {
     userFromApi: User;
 
     constructor(public authenticationService: LoginService) {
-        this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
-        this.currentUser = this.currentUserSubject.value;
+        //this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
+        //this.currentUser = this.currentUserSubject.value;
     }
 
     ngOnInit() {
         debugger;
         this.authenticationService.getUsersDetailsById(this.currentUser.id).pipe(first()).subscribe(user => {
         this.userFromApi = user;
-            console.log(this.userFromApi);
-            
         });
     }
 }

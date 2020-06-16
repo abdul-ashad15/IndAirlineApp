@@ -22,7 +22,7 @@ export class LoginService
         phone: null,
         firstName: '',
         lastName: '',
-        role: Role.User
+        role: Role.AirlineStaff
       }
 
     constructor(private http: HttpClient ) {
@@ -41,6 +41,11 @@ export class LoginService
       getUsersDetailsById(id: number) {
           debugger;
         return this.http.get<User>(this.url + '/' + id);
+    }
+
+    editusers() : Observable<User[]>{
+      return this.http.get
+
     }
 
     logout() {

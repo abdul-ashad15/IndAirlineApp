@@ -29,7 +29,7 @@ export const routes: Routes = [
   {path:'FlightTicket',component:FlightTicketComponent},
   //{path:'DashboardPassenger',component:DashboardPassengerComponent},
   {path:'PageNotFound',component:PageNotFoundComponent},
-  {path:'**',component:PageNotFoundComponent}   
+  {path:'**',component:PageNotFoundComponent}, 
   { path:'admin',component: AdminComponent,canActivate: [AuthGuard],},
   {path:'home', component: HomeComponent},
   {path:'ancilary',component: Ancillaryservices},
