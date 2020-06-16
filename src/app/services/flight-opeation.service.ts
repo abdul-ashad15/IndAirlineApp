@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { FlightList, IFlightList,IOriginDestination, OriginDestination } from '../Models/flight-model/flight-model.component';
+import { FlightList, IFlightList,IOriginDestination, OriginDestination } from '../Models/flight-model.component';
 import { HttpClient } from '@angular/common/http';
 
 

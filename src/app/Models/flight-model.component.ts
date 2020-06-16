@@ -1,4 +1,4 @@
-import { FlightDetailComponent } from 'src/app/flight-detail/flight-detail.component';
+//import { FlightDetailComponent } from 'src/app/flight-detail/flight-detail.component';
 
 export interface IOriginDestination
 {

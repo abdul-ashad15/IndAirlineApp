@@ -56,13 +56,6 @@ import { first } from 'rxjs/operators';
       
       selected: string = '';
 
-      selectChangeHandler (event: any) {
-          debugger;
-        this.selected = event.target.value;
-        this.currentUser.role = this.selected;
-        console.log(this.selected);
-      }
-
       isAdmin()
       {
         return this.currentUser && this.currentUser.role === "Admin";

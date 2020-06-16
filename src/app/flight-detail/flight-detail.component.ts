@@ -1,5 +1,5 @@
 import { Component, OnInit, OnChanges, AfterContentInit, AfterViewChecked, AfterContentChecked, AfterViewInit, Input } from '@angular/core';
-import { FlightList, IOriginDestination, OriginDestination, SeatAllocation } from '../Models/flight-model/flight-model.component';
+import { FlightList, IOriginDestination, OriginDestination, SeatAllocation } from '../Models/flight-model.component';
 import { FlightOpeationService } from '../Services/flight-opeation.service';
 import { DataTransferCheckinService } from '../Services/data-transfer-checkin.service';
 import { Router } from '@angular/router';

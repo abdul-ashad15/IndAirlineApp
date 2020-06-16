@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, ValidatorFn, AbstractControl, ValidationErrors } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { FlightList, Airways, AirportLocation } from '../Models/flight-model/flight-model.component';
+import { FlightList, Airways, AirportLocation } from '../Models/flight-model.component';
 import { Observable, Subscriber } from 'rxjs';
 import { Router } from '@angular/router';
 import { map, subscribeOn } from 'rxjs/operators';
-import { FlightOpeationService } from '../Services/flight-opeation.service';
+import { FlightOpeationService } from '../services/flight-opeation.service';
 import { promise } from 'protractor';
 import { resolve } from 'dns';
 import { rejects } from 'assert';
 import { Routes, RouterModule } from '@angular/router';
-import { DataTransferCheckinService } from '../Services/data-transfer-checkin.service';
-import { TravellersOperationService } from '../Services/travellers-operation.service';
+import { DataTransferCheckinService } from '../services/data-transfer-checkin.service';
+import { TravellersOperationService } from '../services/travellers-operation.service';
 
 @Component({
   selector: 'app-checkin',
