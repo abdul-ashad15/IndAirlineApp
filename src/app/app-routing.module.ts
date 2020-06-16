@@ -20,14 +20,14 @@ import { FlightTicketComponent } from './flight-ticket/flight-ticket.component';
 import { DashboardPassengerComponent } from './dashboard-passenger/dashboard-passenger.component';
 
 export const routes: Routes = [
-  { path: '',component: LoginComponent,canActivate: [AuthGuard],pathMatch: 'full'},
-  { path: '',   redirectTo: '/first-component', pathMatch: 'full' },
+  { path: 'DashboardPassenger',component: DashboardPassengerComponent,pathMatch: 'full'},
+  //{ path: '',   redirectTo: '/first-component', pathMatch: 'full' },
   {path:'checkin',component:CheckinComponent},
   {path:'FlightList',component:FlightListComponent},
   {path:'FlightDetail',component:FlightDetailComponent},
   {path:'TravellerList',component:TravellerListComponent},
   {path:'FlightTicket',component:FlightTicketComponent},
-  {path:'DashboardPassenger',component:DashboardPassengerComponent},
+  //{path:'DashboardPassenger',component:DashboardPassengerComponent},
   {path:'PageNotFound',component:PageNotFoundComponent},
   {path:'**',component:PageNotFoundComponent}   
   { path:'admin',component: AdminComponent,canActivate: [AuthGuard],},
