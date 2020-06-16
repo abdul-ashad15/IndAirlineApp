@@ -11,6 +11,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class DashboardPassengerComponent implements OnInit {
   traveller: any = null;
   travellersList: any[] = [];
+  FirstName : string = '';
   passport: string = '';
   address: string = '';
   birthDate: string = '';
@@ -49,7 +50,7 @@ export class DashboardPassengerComponent implements OnInit {
     this.UpdateTravellersList();
 
     this.TravellersForm = new FormGroup({
-      'FirstName': new FormControl(null, [Validators.required]),
+      /'FirstName': new FormControl(null, [Validators.required]),
       'Surname': new FormControl(null, Validators.required),
       'Email': new FormControl(null, [Validators.required, Validators.email]),
       'ContactNo': new FormControl(null, [Validators.required, Validators.maxLength(15), Validators.minLength(10)]),
